@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    float: left;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 2 columns */
+    gap: 20px; /* Space between images */
+    width: 90%;
+    max-width: 800px;
+    padding-bottom: 100px;
+
+}
+
+.image-item img {
+    width: 150px;
+    height: 100px;
+	border: 5px solid #34495e; /* Add a solid border with a color and thickness */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.image-item figcaption {
+	text-align: center;
+}
+

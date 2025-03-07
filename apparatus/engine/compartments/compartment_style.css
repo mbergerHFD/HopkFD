@@ -1,0 +1,112 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	height: 60vh;
+	padding: 20px;
+	min-height: 100vh;
+}
+
+/* Header with immage and title */
+.header_container {
+	width: 100%;
+}
+
+.header_image {
+	width: 100%;
+}
+
+.h2-black {
+	letter-spacing: 1px;
+	font-size: 25px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Table Styling */
+
+.compartment-table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+}
+
+.compartment-table tr {
+	border-bottom: 1px solid #ddd; /* Adds a subtle divider between rows */
+	white-space: nowrap;
+
+}
+
+.compartment-table td {
+	padding: 20px; /* Increases padding for better readability */
+	white-space: nowrap;
+}
+
+.compartment-table tr td {
+	padding: 15px;
+}
+
+.compartment-table th {
+	text-align: left;
+}
+	
+.compartment-table tr:nth-child(odd) { 
+	background-color: #f5f5f5; /* Alternates row color of table */
+}
+
+
+.table_img {
+	height: 40px;
+	width: 50px;
+}
+
+.compimage {
+	width: 70%;
+	border: 5px solid #34495e;
+	border-radius: 8px; /* Adds rounded corners */
+	
+}
+
+.image_container {
+	width: 100%;
+	text-align: center;
+	padding-left: 5px;
+}
+
+.table_container {
+	width: 100%;
+	padding: 5px;
+
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	padding-top: 10px;
+}
+
+.link_style {
+	color: blue
+}
+
+.indented_row {
+	padding: 20px;
+}
+
+/* Style setting for printing */
+
+@media screen
+{
+    .noPrint{}
+    .noScreen{display:none;}
+}
+
+@media print
+{
+    .noPrint{display:none;}
+    .noScreen{display:block;}
+	.table_container {
+		column-count: 2;
+	}
+}
+

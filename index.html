@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopkinton Fire Department</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+	    <a href="index.html" class="header"><h1>Hopkinton Fire Department</h1></a>
+        
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="apparatus/apparatus.html" target="contentFrame">Apparatus</a></li>
+                <li><a href="water_maps.html" target="contentFrame">Water Maps</a></li>
+                <li><a href="highway_maps.html" target="contentFrame">Highway Maps</a></li>
+                <li><a href="trail_maps.html" target="contentFrame">Trail Maps</a></li>
+                <li><a href="administrative.html" target="contentFrame">Administrative</a></li>
+                <li><a href="run_cards.html" target="contentFrame">Run Cards</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <!-- This iframe will load the content of the other pages -->
+            <iframe name="contentFrame" class="content-frame" src="home.html" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+</body>
+</html>
