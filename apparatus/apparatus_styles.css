@@ -1,31 +1,56 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 20px;  /* Add padding for space around the grid */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 60vh;
-    float: left;
+    align-items: flex-start;  /* Adjust alignment so grid isn't vertically centered */
+    flex-direction: column;
+    min-height: 100vh;  /* Allow the body to take up at least the full height */
 }
 
+/* Image Grid */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 2 columns */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dynamic grid based on screen size */
     gap: 20px; /* Space between images */
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     padding-bottom: 100px;
-
+    margin-top: 30px;  /* Add some margin to the top */
 }
 
+/* Image Item Styling */
 .image-item img {
-    width: 150px;
-    height: 100px;
-	border: 5px solid #34495e; /* Add a solid border with a color and thickness */
-    border-radius: 8px; /* Optional: Adds rounded corners */
+    width: 100%;  /* Ensure images scale responsively */
+    height: 100%;  /* Ensure images stretch to the full height of the container */
+    object-fit: contain;  /* Ensure the image maintains aspect ratio and fits within its container without cropping */
+    border: 5px solid #34495e; /* Add a solid border with a color and thickness */
+    border-radius: 8px; /* Rounded corners for the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Add shadow transition */
 }
 
+.image-item img:hover {
+    transform: scale(1.05);  /* Zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow on hover */
+}
+
+/* Caption Styling */
 .image-item figcaption {
-	text-align: center;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;  /* Add some space between image and caption */
 }
 
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr;  /* Single column layout on small screens */
+    }
+    
+    .image-item img {
+        width: 100%;  /* Ensure images take up the full width on smaller screens */
+    }
+}

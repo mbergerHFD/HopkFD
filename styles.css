@@ -18,8 +18,8 @@ header {
 }
 
 .header {
-	text-decoration: none; 
-	color: white
+    text-decoration: none;
+    color: white;
 }
 
 /* Container to hold sidebar and content */
@@ -76,7 +76,8 @@ header {
     margin-left: 220px;  /* Offset to make room for the sidebar */
     padding: 20px;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 60px);  /* Adjust content area height */
+    overflow: auto;  /* Handle content overflow */
 }
 
 .content-frame {
@@ -84,4 +85,22 @@ header {
     height: 100%;
     border: none;
     padding-top: 20px;
+}
+
+/* Optional: Ensure the page looks good on smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative; /* Remove fixed positioning for small screens */
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .content-frame {
+        height: 400px;  /* Adjust iframe height for smaller screens */
+    }
 }
