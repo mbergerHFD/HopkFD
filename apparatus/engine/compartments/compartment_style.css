@@ -99,16 +99,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: nowrap;
+    gap: 5px;               /* Consistent gap between buttons */
+    padding: 10px;
+    flex-wrap: nowrap;       /* Prevent wrapping on large screens */
     width: 100%;
 }
 
 /* Button Styling */
 button {
     padding: 12px 12px;
-    margin: 0;
+    margin: 0;               /* Reset margin to rely on gap */
     background-color: #34495e;
     color: white;
     border: none;
@@ -118,8 +118,8 @@ button {
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-width: 150px;
-    width: auto;
-    flex: 0 0 auto;
+    width: auto;             /* Auto width for side-by-side layout */
+    flex: 0 0 auto;          /* Prevents buttons from stretching */
 }
 
 /* Hover Effect */
@@ -155,7 +155,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
-    background-color: #f5f5f5;
 }
 
 /* ----------- Media Queries ----------- */
@@ -180,13 +179,13 @@ footer {
     }
 
     .button-container {
-        flex-wrap: wrap;
+        flex-wrap: wrap;          /* Allow wrapping on small devices */
     }
 
     button {
-        width: 100%;
+        width: 100%;              /* Full width buttons for mobile */
         padding: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 10px;      /* Space between stacked buttons */
     }
 }
 
@@ -205,14 +204,14 @@ footer {
     }
 
     .button-container {
-        flex-wrap: nowrap;
+        flex-wrap: nowrap;         /* Prevent wrapping on large screens */
     }
 
     button {
-        width: auto;
+        width: auto;               /* Auto width for desktop */
         padding: 12px 12px;
         margin: 0;
-        flex: 0 0 auto;
+        flex: 0 0 auto;            /* Keep buttons side by side */
     }
 
     #header_container h2 {
@@ -250,28 +249,21 @@ footer {
 
     .table_container, .header_container {
         width: 100%;
-        column-count: initial; /* Prevent forced columns */
-        column-gap: 0;
-    }
-
-    .table_container {
-        overflow-x: auto;
+        column-count: 2;
+        column-gap: 20px;
     }
 
     .compartment-table {
-        width: auto;            /* Allow table to auto-adjust */
-        max-width: 100%;        /* Prevent overflow */
-        font-size: 0.9rem;      /* Slightly smaller font for print */
-        border-collapse: collapse;
+        width: 100%;
+        font-size: 1rem;
     }
 
     .compartment-table th, .compartment-table td {
-        padding: 4px;           /* Reduce padding for compactness */
+        padding: 5px;
         page-break-inside: avoid;
-        word-break: break-word; /* Prevent long words from causing overflow */
     }
 
     #header_container h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
