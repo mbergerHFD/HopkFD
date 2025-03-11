@@ -67,18 +67,16 @@ body {
 }
 
 @media (max-width: 600px) {
-    .compartment-table, 
-    .compartment-table thead, 
-    .compartment-table tbody, 
-    .compartment-table th, 
-    .compartment-table td, 
-    .compartment-table tr {
-        display: block;
+    .compartment-table {
+        font-size: 0.8rem;
         width: 100%;
+        overflow-x: auto;
+        display: block;
     }
 
-    .compartment-table tr {
-        margin-bottom: 15px;
+    .compartment-table tr, .compartment-table th, .compartment-table td {
+        display: block;
+        width: 100%;
     }
 
     .compartment-table td {
