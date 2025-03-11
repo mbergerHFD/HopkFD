@@ -124,4 +124,7 @@ header {
         margin-left: 0;
         width: 100%;
     }
+    head {
+	    width:50%;
+	    }
 }
