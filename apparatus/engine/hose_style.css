@@ -81,5 +81,66 @@ body {
         margin: 0;
         padding: 0;
     }
+}
 
+/* ----------- Media Queries ----------- */
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image_container, 
+    .table_container {
+        width: 100%;
+    }
+
+    #header_container h2 {
+        font-size: 6vw;
+    }
+
+    #header_container p {
+        font-size: 1rem;
+    }
+
+    .button-container {
+        flex-wrap: wrap;          /* Allow wrapping on small devices */
+    }
+
+    button {
+        width: 100%;              /* Full width buttons for mobile */
+        padding: 10px;
+        margin-bottom: 10px;      /* Space between stacked buttons */
+    }
+}
+
+/* Desktop Adjustments */
+@media (min-width: 601px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .image_container {
+        width: 300px;
+    }
+
+    .table_container {
+        padding: 20px;
+    }
+
+    .button-container {
+        flex-wrap: nowrap;         /* Prevent wrapping on large screens */
+    }
+
+    button {
+        width: auto;               /* Auto width for desktop */
+        padding: 12px 12px;
+        margin: 0;
+        flex: 0 0 auto;            /* Keep buttons side by side */
+    }
+
+    #header_container h2 {
+        font-size: 3vw;
+    }
 }
