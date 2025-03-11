@@ -108,8 +108,6 @@ body {
     text-decoration: none; /* Optionally, remove underlining */
 }
 
-
-
 /* Print Media Query */
 @media screen {
     .noPrint {
@@ -164,7 +162,7 @@ body {
         padding: 5px;
     }
     
-     #header_container h2 {
+    #header_container h2 {
         font-size: 1.5rem; /* Adjust size as needed */
     }
 }
@@ -217,6 +215,16 @@ button:focus {
 
 /* Responsive Button */
 @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .image_container {
+        order: 2;
+        width: 100%;
+    }
+    .table_container {
+        order: 1;
+    }
     button {
         width: 100%; /* Full width on small devices */
         padding: 15px;
@@ -231,5 +239,4 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-	
 }
