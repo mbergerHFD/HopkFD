@@ -1,32 +1,87 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 20px;  /* Add padding for space around the grid */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 60vh;
-    float: left;
-    padding-top: 375px;
+    align-items: flex-start;  /* Align grid to the top, not vertically centered */
+    flex-direction: column;
+    min-height: 100vh;  /* Ensure body takes at least the full height */
 }
 
+/* Header Styling */
+#header {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#header h2 {
+    font-size: 2rem;
+    color: #34495e;
+}
+
+#header p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Image Grid Styling */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Creates desired number of columns */
-    gap: 20px; /* Space between images */
-    width: 90%;
-    max-width: 800px;
-    padding-bottom: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;  /* Space between images */
+    width: 100%;  /* Make the grid take up the full width */
+    max-width: 800px;  /* Limit the grid's width */
+    margin-top: 30px;  /* Add margin at the top */
+    padding-bottom: 100px;  /* Space at the bottom of the grid */
+}
 
+/* Image Item Styling */
+.image-item {
+    text-align: center;
 }
 
 .image-item img {
-    width: 150px;
-    height: 100px;
-	border: 5px solid #34495e; /* Add a solid border with a color and thickness */
-    border-radius: 8px; /* Optional: Adds rounded corners */
+    width: 100%;  /* Make images scale to their container */
+    height: 200px;  /* Set fixed height for all images */
+    object-fit: contain;  /* Ensure the entire image fits without cropping */
+    border: 5px solid #34495e;  /* Add solid border */
+    border-radius: 8px;  /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover transition */
 }
 
+.image-item img:hover {
+    transform: scale(1.05);  /* Zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow effect */
+}
+
+/* Caption Styling */
 .image-item figcaption {
-	text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;  /* Space between image and caption */
 }
 
+/* "Coming Soon" Styling */
+.image-item img.coming-soon {
+    opacity: 0.6;  /* Make "Coming Soon" images less clickable */
+    cursor: not-allowed;  /* Show "not-allowed" cursor */
+}
+
+.image-item figcaption.coming-soon {
+    color: #888;  /* Lighter color for "Coming Soon" captions */
+}
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr;  /* Stack images vertically on smaller screens */
+    }
+
+    .image-item img {
+        width: 100%;  /* Ensure images take up full width on small screens */
+        height: 200px;  /* Fixed height for all images */
+    }
+}

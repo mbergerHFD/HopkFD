@@ -4,96 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engine 1 - Rear</title>
-	<link rel="stylesheet" href="compartment_style.css">
-
+    <link rel="stylesheet" href="compartment_style.css">
 </head>
-<body>	
-			<div id="header_container" class="header_container">
-				<img src="images/specsheetrear.jpg" class="header_image" alt="image">
-				<h2 class="h2-black">Driver Compartment Rear</h2>
-			</div>
-			<hr>
-				<input type="button" value="Print" onclick="parent.window.focus();window.print();" class="noPrint"/>
-				<button onclick="history.back()" class="noPrint">Back</button>
-				<a href="o5.html"><button class="noPrint">Next</button></a>
-			<hr>
-			<div class="container">
-				
-					<div class="table_container">
-						
-					<table id="compartmentTable" class="compartment-table">
-						<tbody>
-						<tr>
-							<th><a href="images/4way.jpg" target="_blank">
-								<img src="images/4way.jpg" alt="image" class="table_img"></th>
-							<td><a href="pdf/hydrantassistvalve.pdf" target="_blank">TFT Hydrant Assist Valve</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/ruralhitch.jpg" target="_blank">
-								<img src="images/ruralhitch.jpg" alt="image" class="table_img"></th>
-							<td>Rural Hitch</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>	
-						<tr>
-							<th><a href="images/lgspannerstorz.jpg" target="_blank">
-								<img src="images/lgspannerstorz.jpg" alt="image" class="table_img"></th>
-							<td>Large Spanner Wrench (4)</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>	
-						<tr>
-							<th><a href="images/4nhstorz.jpg" target="_blank">
-								<img src="images/4nhstorz.jpg" alt="image" class="table_img"></th>
-							<td>4" NH Female - 4" Storz</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>	
-						<tr>
-							<th><a href="images/hydrantbag.jpg" target="_blank">
-								<img src="images/hydrantbag.jpg" alt="image" class="table_img"></th>
-							<td>Hydrant Bag</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>	
-						<tr>
-							<th><a href="images/lgspannerstorz.jpg" target="_blank">
-								<img src="images/lgspannerstorz.jpg" alt="image" class="table_img"></th>
-							<td style="padding-left: 5px">Large Spanner Wrench (2)</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/smspanner.jpg" target="_blank">
-								<img src="images/smspanner.jpg" alt="image" class="table_img"></th>
-							<td style="padding-left: 5px">Small Spanner Wrench (2)</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/hydrantwrench.jpg" target="_blank">
-								<img src="images/hydrantwrench.jpg" alt="image" class="table_img"></th>
-							<td style="padding-left: 5px">Hydrant Wrench</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/2nhgatevalve.jpg" target="_blank">
-								<img src="images/2nhgatevalve.jpg" alt="" class="table_img"></th>
-							<td style="padding-left: 5px">2" NH Gate Valve</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/noimage.jpg" target="_blank">
-								<img src="images/noimage.jpg" alt="" class="table_img"></th>
-							<td style="padding-left: 5px">2" NH - 4" Storz Gate Valve</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-					
-				<div class="noPrint">
-					<div class="image_container">
-						<img src="images/rear.jpg" alt="image" class="compimage">
-					</div>
-				</div>
-			</div>
+<body>  
+    <!-- Header Section -->
+    <div id="header_container" class="header_container">
+        <img src="images/specsheetrear.jpg" class="header_image" alt="Driver Compartment Rear Image">
+        <h2 class="h2-black">Driver Compartment Rear</h2>
+    </div>
 
+    <hr>
 
+    <!-- Button Section -->
+    <div class="button-container noPrint">
+	    <button onclick="window.print()" class="noPrint">Print</button>
+        <button onclick="history.back()" class="noPrint">Back</button>
+    </div>
+
+    <hr>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        
+        <!-- Table Section -->
+        <div class="table_container">
+            <table id="compartmentTable" class="compartment-table">
+                <tbody>
+                    <tr>
+                        <th><a href="images/4way.jpg" target="_blank">
+                            <img src="images/4way.jpg" alt="TFT Hydrant Assist Valve" class="table_img"></a></th>
+                        <td><a href="pdf/hydrantassistvalve.pdf" target="_blank">TFT Hydrant Assist Valve</a></td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/ruralhitch.jpg" target="_blank">
+                            <img src="images/ruralhitch.jpg" alt="Rural Hitch" class="table_img"></a></th>
+                        <td>Rural Hitch</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>    
+                    <tr>
+                        <th><a href="images/lgspannerstorz.jpg" target="_blank">
+                            <img src="images/lgspannerstorz.jpg" alt="Large Spanner Wrench (4)" class="table_img"></a></th>
+                        <td>Large Spanner Wrench (4)</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>    
+                    <tr>
+                        <th><a href="images/4nhstorz.jpg" target="_blank">
+                            <img src="images/4nhstorz.jpg" alt="4” NH Female - 4” Storz" class="table_img"></a></th>
+                        <td>4" NH Female - 4" Storz</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>    
+                    <tr>
+                        <th><a href="images/hydrantbag.jpg" target="_blank">
+                            <img src="images/hydrantbag.jpg" alt="Hydrant Bag" class="table_img"></a></th>
+                        <td>Hydrant Bag</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>    
+                    <tr>
+                        <th><a href="images/lgspannerstorz.jpg" target="_blank">
+                            <img src="images/lgspannerstorz.jpg" alt="Large Spanner Wrench (2)" class="table_img"></a></th>
+                        <td>Large Spanner Wrench (2)</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/smspanner.jpg" target="_blank">
+                            <img src="images/smspanner.jpg" alt="Small Spanner Wrench (2)" class="table_img"></a></th>
+                        <td>Small Spanner Wrench (2)</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/hydrantwrench.jpg" target="_blank">
+                            <img src="images/hydrantwrench.jpg" alt="Hydrant Wrench" class="table_img"></a></th>
+                        <td>Hydrant Wrench</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/2nhgatevalve.jpg" target="_blank">
+                            <img src="images/2nhgatevalve.jpg" alt="2” NH Gate Valve" class="table_img"></a></th>
+                        <td>2" NH Gate Valve</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/noimage.jpg" target="_blank">
+                            <img src="images/noimage.jpg" alt="2” NH - 4” Storz Gate Valve" class="table_img"></a></th>
+                        <td>2" NH - 4" Storz Gate Valve</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="noPrint">
+            <div class="image_container">
+                <img src="images/rear.jpg" alt="Driver Compartment Rear" class="compimage">
+            </div>
+        </div>
+    </div>
+
+    <hr>
 </body>
 </html>

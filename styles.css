@@ -1,20 +1,28 @@
 /* Global styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better readability */
 }
 
+/* Header styles */
 header {
-    background-color: #000000;
+    background-color: #000;
     color: red;
     text-align: center;
-    padding: 10px;
-    position: fixed; /* Keep header fixed at the top */
+    padding: 0px;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 10; /* Ensure header stays above content */
+    z-index: 10;
+    height: 60px;
+    line-height: 30px; /* Vertically center text */
 }
 
 .header {
@@ -22,11 +30,11 @@ header {
     color: white;
 }
 
-/* Container to hold sidebar and content */
+/* Main container holding sidebar and content */
 .container {
     display: flex;
-    height: 100vh;
-    margin-top: 60px;  /* Offset the container below the header */
+    padding-top: 60px; /* Prevents content from hiding under the header */
+    height: calc(100vh - 60px); /* Full height minus header */
 }
 
 /* Sidebar styles */
@@ -34,12 +42,13 @@ header {
     width: 200px;
     background-color: #454545;
     position: fixed;
-    top: 60px;  /* Make sidebar start below the header */
+    top: 60px; /* Starts right after the fixed header */
     left: 0;
-    height: calc(100% - 60px); /* Ensure the sidebar doesn't overlap the header */
-    padding-top: 20px;
+    height: calc(100vh - 60px); /* Full height minus header */
+    padding-top: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
-    z-index: 5; /* Sidebar below the header */
+    z-index: 5;
 }
 
 .sidebar ul {
@@ -50,11 +59,6 @@ header {
 
 .sidebar li {
     margin: 10px 0;
-}
-
-/* Add space at the top of the sidebar links */
-.sidebar ul {
-    padding-top: 20px;  /* Move the links down */
 }
 
 .sidebar a {
@@ -68,39 +72,19 @@ header {
 }
 
 .sidebar a:hover {
-    background-color: #575757;
+    background-color: #616161;
 }
 
 /* Content area styles */
 .content {
-    margin-left: 220px;  /* Offset to make room for the sidebar */
-    padding: 20px;
-    width: 100%;
-    height: calc(100vh - 60px);  /* Adjust content area height */
-    overflow: auto;  /* Handle content overflow */
+    margin-left: 210px; /* Sidebar width + padding */
+    width: calc(100% - 210px);
+    padding: 10px;
 }
 
+/* Iframe styles */
 .content-frame {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 70px); /* Full height minus header and padding */
     border: none;
-    padding-top: 20px;
-}
-
-/* Optional: Ensure the page looks good on smaller screens */
-@media (max-width: 768px) {
-    .sidebar {
-        position: relative; /* Remove fixed positioning for small screens */
-        width: 100%;
-        height: auto;
-    }
-
-    .content {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .content-frame {
-        height: 400px;  /* Adjust iframe height for smaller screens */
-    }
 }

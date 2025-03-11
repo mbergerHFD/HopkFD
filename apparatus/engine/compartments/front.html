@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engine 1 - Front</title>
-	<link rel="stylesheet" href="compartment_style.css">
-
+    <link rel="stylesheet" href="compartment_style.css">
 </head>
-<body>	
-			<div id="header_container" class="header_container">
-				<img src="images/specsheetfront.jpg" style="width: 50%" class="header_image" alt="image">
-				<h2 class="h2-black">Front Compartment</h2>
-			</div>
-			<hr>
-				<input type="button" value="Print" onclick="parent.window.focus();window.print();" class="noPrint">
-				<button onclick="history.back()" class="noPrint">Back</button>
-			<hr>
-			<div class="container">
-				
-					<div class="table_container">
-						
-					<table id="compartmentTable" class="compartment-table">
-						<tbody>
-						<tr>
-							<th><a href="images/noimage.jpg" target="_blank">
-								<img src="images/noimage.jpg" alt="image" class="table_img"></th>
-							<td>4500 PSI 30 MIN MSA G1 Cylinder</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="noPrint"><div class="image_container"><img src="images/front.jpg" alt="image" class="compimage"></div>
-			</div>
+<body>    
+    <!-- Header Section -->
+    <div id="header_container" class="header_container">
+        <img src="images/specsheetfront.jpg" style="width: 50%" class="header_image" alt="Front Compartment Image">
+        <h2 class="h2-black">Front Compartment</h2>
+    </div>
+    <hr>
+    
+    <!-- Button Section -->
+    <div class="button-container noPrint">
+	    <button onclick="window.print()" class="noPrint">Print</button>
+        <button onclick="history.back()" class="noPrint">Back</button>
+    </div>
+    <hr>
+    
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Table Section -->
+        <div class="table_container">
+            <table id="compartmentTable" class="compartment-table">
+                <tbody>
+                    <tr>
+                        <th><a href="images/noimage.jpg" target="_blank">
+                            <img src="images/noimage.jpg" alt="4500 PSI 30 MIN MSA G1 Cylinder" class="table_img"></a></th>
+                        <td>4500 PSI 30 MIN MSA G1 Cylinder</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <!-- Image Section -->
+        <div class="noPrint">
+            <div class="image_container">
+                <img src="images/front.jpg" alt="Front Compartment Image" class="compimage">
+            </div>
+        </div>
+    </div>
 
+    <hr>
 </body>
 </html>

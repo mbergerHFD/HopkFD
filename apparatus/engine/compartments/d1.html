@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Engine 1 - D1</title>
-	<link rel="stylesheet" href="compartment_style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Compartment 1 - D1</title>
+    <link rel="stylesheet" href="compartment_style.css">
 </head>
 <body>
-	<div class="noScreen" style="text-align: center">
-		<h1>Hopkinton Fire Department</h1><hr>
-	</div>
-			<div id="header_container" class="header_container">
-				<h2 class="h2-black">Driver Compartment 1</h2>
-				<img src="images/specsheetdriverd1.jpg" class="header_image" alt="image">
-			</div>
-				<input type="button" value="Print" onclick="parent.window.focus();window.print();" class="noPrint"/>
-				<button onclick="history.back()" class="noPrint">Back</button>
-				<a href="d2.html"><button class="noPrint">Next</button></a>
+    <!-- Header Section -->
+    <div id="header_container" class="header_container">
+        <img src="images/specsheetdriverd1.jpg" class="header_image" alt="Driver Compartment Image">
+		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
+		<h2>Driver Compartment 1</h2>
+    </div>
 
-			<hr>
-			<div class="container">
-				
-					<div class="table_container">
-						
-					<table id="compartmentTable" class="compartment-table">
-						<tbody>
+    <!-- Button Section -->
+    <div class="button-container noPrint">
+	    <button onclick="window.print()" class="noPrint">Print</button>
+        <button onclick="history.back()" class="noPrint">Back</button>
+    </div>
+    <hr>
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Table Section -->
+        <div class="table_container">
+            <table id="compartmentTable" class="compartment-table">
+                <tbody>
 						<tr>
 							<th><a href="images/4-5-Storz.jpg" target="_blank">
 									<img src="images/4-5-Storz.jpg" alt="image" class="table_img"></th>
@@ -146,13 +146,28 @@
 							<th><a href="images/noimage.jpg" target="_blank"><img src="images/noimage.jpg" alt="image" class="table_img"></th>
 							<td>1” ALFCO Shutoff with ¼” Smoothbore Tip</td></a>
 							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="noPrint"><div class="image_container"><img src="images/d1.jpg" alt="image" class="compimage"></div></div>
-			</div><hr>
+						</tr>                
+					</tbody>
+            </table>
+        </div>
+        
+        <!-- Image Section -->
+		<div class="noPrint">
 
-
+			<div class="image_container">
+				<img src="images/d1.jpg" alt="Driver Compartment Image" class="compimage">
+			</div>
+		</div>
+    </div>
 </body>
+		<footer>
+			<div class="noScreen">
+			<p id="demo"></p>
+			</div>
+		</footer>
+
+		<script>
+			const d = new Date();
+			document.getElementById("demo").innerHTML = d.toDateString();
+		</script>
 </html>

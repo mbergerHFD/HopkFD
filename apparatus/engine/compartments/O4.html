@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Engine 1 - O4</title>
-	<link rel="stylesheet" href="compartment_style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Compartment 4 - O4</title>
+    <link rel="stylesheet" href="compartment_style.css">
 </head>
 <body>
-	<div class="noScreen" style="text-align: center">
-		<h1>Hopkinton Fire Department</h1><hr>
-	</div>
-			<div id="header_container" class="header_container">
-				<h2 class="h2-black">Officer Compartment 4</h2>
-				<img src="images/specsheetofficerO4.jpg" class="header_image" alt="image">
-			</div>
-				<input type="button" value="Print" onclick="parent.window.focus();window.print();" class="noPrint"/>
-				<button onclick="history.back()" class="noPrint">Back</button>
-				<a href="O3.html"><button class="noPrint">Next</button></a>
+    <!-- Header Section -->
+    <div id="header_container" class="header_container">
+        <img src="images/specsheetofficerO4.jpg" class="header_image" alt="Officer Compartment 4 Image">
+        <h2 class="h2-black">Officer Compartment 4</h2>
+    </div>
 
-			<hr>
-			<div class="container">
-				
-					<div class="table_container">
-						
-					<table id="compartmentTable" class="compartment-table">
-						<tbody>
-						<tr>
-							<th><a href="images/4-5-Storz.jpg" target="_blank">
-									<img src="images/4-5-Storz.jpg" alt="image" class="table_img"></th>
-							<td>CO2 Fire Extinugisher</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/4.5-6-nh.jpg" target="_blank"><img src="images/4.5-6-nh.jpg" alt="image" class="table_img"></th>
-							<td>Floor Runner</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/6incap.jpg" target="_blank"><img src="images/6incap.jpg" alt="image" class="table_img"></th>
-							<td>10x12 Blue Tarp</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						<tr>
-							<th><a href="images/2.5nh-ff.jpg" target="_blank"><img src="images/2.5nh-ff.jpg" alt="image" class="table_img"></th>
-							<td>10x12 Blue Tarp</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="noPrint"><div class="image_container"><img src="images/o4.jpg" alt="image" class="compimage"></div></div>
-			</div><hr>
+    <!-- Button Section -->
+    <div class="button-container noPrint">
+	    <button onclick="window.print()" class="noPrint">Print</button>
+        <button onclick="history.back()" class="noPrint">Back</button>
+    </div>
 
+    <hr>
 
+    <!-- Main Content Section -->
+    <div class="container">
+        
+        <!-- Table Section for Officer Compartment 4 Items -->
+        <div class="table_container">
+            <table id="compartmentTable" class="compartment-table">
+                <p style="text-decoration: underline; font-weight: bold;">Top Shelf</p>
+                <tbody>
+                    <tr>
+                        <th><a href="images/4-5-Storz.jpg" target="_blank"><img src="images/4-5-Storz.jpg" alt="CO2 Fire Extinguisher" class="table_img"></a></th>
+                        <td>CO2 Fire Extinguisher</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/4.5-6-nh.jpg" target="_blank"><img src="images/4.5-6-nh.jpg" alt="Floor Runner" class="table_img"></a></th>
+                        <td>Floor Runner</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/6incap.jpg" target="_blank"><img src="images/6incap.jpg" alt="10x12 Blue Tarp" class="table_img"></a></th>
+                        <td>10x12 Blue Tarp</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th><a href="images/2.5nh-ff.jpg" target="_blank"><img src="images/2.5nh-ff.jpg" alt="10x12 Blue Tarp" class="table_img"></a></th>
+                        <td>10x12 Blue Tarp</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="noPrint">
+            <div class="image_container">
+                <img src="images/o4.jpg" alt="Officer Compartment 4 Image" class="compimage">
+            </div>
+        </div>
+    </div>
+
+    <hr>
 </body>
 </html>
