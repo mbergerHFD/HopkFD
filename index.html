@@ -15,12 +15,12 @@
     <div class="container">
         <nav class="sidebar" id="sidebar">
             <ul>
-                <li><a href="apparatus/apparatus.html" target="contentFrame">Apparatus</a></li>
-                <li><a href="water_maps.html" target="contentFrame">Water Maps</a></li>
-                <li><a href="highway_maps.html" target="contentFrame">Highway Maps</a></li>
-                <li><a href="trail_maps.html" target="contentFrame">Trail Maps</a></li>
-                <li><a href="administrative.html" target="contentFrame">Administrative</a></li>
-                <li><a href="run_cards.html" target="contentFrame">Run Cards</a></li>
+                <li><a href="apparatus/apparatus.html" target="contentFrame" onclick="closeSidebar()">Apparatus</a></li>
+                <li><a href="water_maps.html" target="contentFrame" onclick="closeSidebar()">Water Maps</a></li>
+                <li><a href="highway_maps.html" target="contentFrame" onclick="closeSidebar()">Highway Maps</a></li>
+                <li><a href="trail_maps.html" target="contentFrame" onclick="closeSidebar()">Trail Maps</a></li>
+                <li><a href="administrative.html" target="contentFrame" onclick="closeSidebar()">Administrative</a></li>
+                <li><a href="run_cards.html" target="contentFrame" onclick="closeSidebar()">Run Cards</a></li>
             </ul>
         </nav>
 
@@ -33,6 +33,11 @@
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('open');
+        }
+
+        function closeSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.remove('open');
         }
     </script>
 </body>

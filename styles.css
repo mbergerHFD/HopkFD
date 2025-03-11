@@ -30,97 +30,130 @@
             color: white;
         }
 
-        /* Hamburger icon */
-        .menu-toggle {
-            display: none;
-            font-size: 28px;
-            color: white;
-            position: absolute;
-            left: 20px;
-            top: 15px;
-            cursor: pointer;
-        }
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
 
-        /* Main container */
-        .container {
-            display: flex;
-            padding-top: 60px;
-            height: calc(100vh - 60px);
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        /* Sidebar styles */
-        .sidebar {
-            width: 200px;
-            background-color: #454545;
-            position: fixed;
-            top: 60px;
-            left: 0;
-            height: calc(100vh - 60px);
-            padding-top: 10px;
-            padding-right: 10px;
-            box-sizing: border-box;
-            z-index: 5;
-            transition: transform 0.3s ease;
-        }
+/* Header styles */
+header {
+    background-color: #000;
+    color: red;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 60px;
+    line-height: 30px;
+}
 
-        .sidebar.collapsed {
-            transform: translateX(-100%);
-        }
+.header {
+    text-decoration: none;
+    color: white;
+}
 
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+/* Hamburger icon */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 11;
+}
 
-        .sidebar li {
-            margin: 10px 0;
-        }
+/* Main container */
+.container {
+    display: flex;
+    padding-top: 60px;
+    height: calc(100vh - 60px);
+}
 
-        .sidebar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px;
-            display: block;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #454545;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px);
+    padding-top: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    z-index: 5;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
 
-        .sidebar a:hover {
-            background-color: #616161;
-        }
+.sidebar.open {
+    transform: translateX(0);
+}
 
-        /* Content area styles */
-        .content {
-            margin-left: 210px;
-            width: calc(100% - 210px);
-            padding: 10px;
-        }
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
+.sidebar li {
+    margin: 10px 0;
+}
 
-            .sidebar {
-                transform: translateX(-100%);
-            }
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
 
-            .sidebar.open {
-                transform: translateX(0);
-            }
+.sidebar a:hover {
+    background-color: #616161;
+}
 
-            .content {
-                margin-left: 0;
-                width: 100%;
-            }
-        }
+/* Content area */
+.content {
+    margin-left: 210px;
+    width: calc(100% - 210px);
+    padding: 10px;
+}
 
-        /* Iframe styles */
-        .content-frame {
-            width: 100%;
-            height: calc(100vh - 70px);
-            border: none;
-        }
+/* Iframe styles */
+.content-frame {
+    width: 100%;
+    height: calc(100vh - 70px);
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
