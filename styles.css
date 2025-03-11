@@ -1,90 +1,126 @@
-/* Global styles */
-* {
-    box-sizing: border-box;
-}
+    /* Global styles */
+        * {
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Light background for better readability */
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-/* Header styles */
-header {
-    background-color: #000;
-    color: red;
-    text-align: center;
-    padding: 0px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: 60px;
-    line-height: 30px; /* Vertically center text */
-}
+        /* Header styles */
+        header {
+            background-color: #000;
+            color: red;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            height: 60px;
+            line-height: 30px;
+        }
 
-.header {
-    text-decoration: none;
-    color: white;
-}
+        .header {
+            text-decoration: none;
+            color: white;
+        }
 
-/* Main container holding sidebar and content */
-.container {
-    display: flex;
-    padding-top: 60px; /* Prevents content from hiding under the header */
-    height: calc(100vh - 60px); /* Full height minus header */
-}
+        /* Hamburger icon */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: white;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            cursor: pointer;
+        }
 
-/* Sidebar styles */
-.sidebar {
-    width: 200px;
-    background-color: #454545;
-    position: fixed;
-    top: 60px; /* Starts right after the fixed header */
-    left: 0;
-    height: calc(100vh - 60px); /* Full height minus header */
-    padding-top: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-    z-index: 5;
-}
+        /* Main container */
+        .container {
+            display: flex;
+            padding-top: 60px;
+            height: calc(100vh - 60px);
+        }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+        /* Sidebar styles */
+        .sidebar {
+            width: 200px;
+            background-color: #454545;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            height: calc(100vh - 60px);
+            padding-top: 10px;
+            padding-right: 10px;
+            box-sizing: border-box;
+            z-index: 5;
+            transition: transform 0.3s ease;
+        }
 
-.sidebar li {
-    margin: 10px 0;
-}
+        .sidebar.collapsed {
+            transform: translateX(-100%);
+        }
 
-.sidebar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.sidebar a:hover {
-    background-color: #616161;
-}
+        .sidebar li {
+            margin: 10px 0;
+        }
 
-/* Content area styles */
-.content {
-    margin-left: 210px; /* Sidebar width + padding */
-    width: calc(100% - 210px);
-    padding: 10px;
-}
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
 
-/* Iframe styles */
-.content-frame {
-    width: 100%;
-    height: calc(100vh - 70px); /* Full height minus header and padding */
-    border: none;
-}
+        .sidebar a:hover {
+            background-color: #616161;
+        }
+
+        /* Content area styles */
+        .content {
+            margin-left: 210px;
+            width: calc(100% - 210px);
+            padding: 10px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+        /* Iframe styles */
+        .content-frame {
+            width: 100%;
+            height: calc(100vh - 70px);
+            border: none;
+        }
