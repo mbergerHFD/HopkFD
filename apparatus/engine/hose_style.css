@@ -129,17 +129,6 @@ body {
         padding: 20px;
     }
 
-    .button-container {
-        flex-wrap: nowrap;         /* Prevent wrapping on large screens */
-    }
-
-    button {
-        width: auto;               /* Auto width for desktop */
-        padding: 12px 12px;
-        margin: 0;
-        flex: 0 0 auto;            /* Keep buttons side by side */
-    }
-
     #header_container h2 {
         font-size: 3vw;
     }
