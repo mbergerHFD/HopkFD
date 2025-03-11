@@ -53,3 +53,33 @@ body {
 	width: 100%;
 	height: 190px;
 }
+
+/* Print and Screen Media Queries */
+@media screen {
+    .noPrint {
+        display: block;
+    }
+    .noScreen {
+        display: none;
+    }
+}
+
+@media print {
+    .noPrint {
+        display: none;
+    }
+    .noScreen {
+        display: block;
+    }
+
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+}
