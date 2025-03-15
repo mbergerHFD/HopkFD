@@ -3,44 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engine 1 - D1</title>
+    <title>Engine 1 - Rear Ladder Compartment</title>
     <link rel="stylesheet" href="compartment_style.css">
 </head>
-<body>  
+<body>    
     <!-- Header Section -->
-    <div class="noScreen" style="text-align: center">
-        <h1>Hopkinton Fire Department</h1><hr>
-    </div>
-
     <div id="header_container" class="header_container">
-        <h2 class="h2-black">Driver Compartment 1</h2>
-        <img src="images/specsheetdriverd2.jpg" class="header_image" alt="Driver Compartment Image">
+        <img src="images/specsheetrearladders.jpg" class="header_image" alt="Driver Compartment Image">
+		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
+		<h2>Driver Compartment 3</h2>
+	</div>
+    <!-- Button Section -->
+    <div class="button-container">
+	    <button onclick="window.print()" class="noPrint">Print</button>
+        <button onclick="history.back()" class="noPrint">Back</button>
     </div>
-
     <hr>
-
     <!-- Main Content Section -->
     <div class="container">
-        <!-- Image Section -->
-        <div class="image_container">
-            <img src="images/d2.jpg" alt="Driver Compartment Image" class="compimage">
-        </div>
-
         <!-- Table Section -->
-        <div class="table_container">
+        <section class="table_container">
             <table id="compartmentTable" class="compartment-table">
                 <tbody>
                     <tr>
-                        <th><a href="images/4-5-Storz.jpg" target="_blank">
-                            <img src="images/4-5-Storz.jpg" alt="4” Storz - 5” Storz" class="table_img"></a></th>
-                        <td>4” Storz - 5” Storz</td>
+                        <th scope="row"><a href="images/24ladder.jpg" target="_blank">
+	                        <img src="images/24ladder.jpg" alt="24' Ladder" class="table_img"></a></th>
+                        <td>24' Extension Ladder </td>
                         <td><div class="noScreen"><input type="checkbox"></div></td>
                     </tr>
-                </tbody>
+                    <tr>
+                        <th scope="row"><a href="images/14roof.jpg" target="_blank">
+	                        <img src="images/14roof.jpg" alt="24' Ladder" class="table_img"></a></th>
+                        <td>14' Roof Ladder </td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="images/atticladder.jpg" target="_blank">
+	                        <img src="images/atticladder.jpg" alt="24' Ladder" class="table_img"></a></th>
+                        <td>10' Folding Attic Ladder </td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>                        <th scope="row"><a href="images/pikepoll.jpg" target="_blank">
+	                        <img src="images/pikepoll.jpg" alt="24' Ladder" class="table_img"></a></th>
+                        <td>10' Pike Poll</td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>  
+                    <tr>
+                        <th scope="row"><a href="images/roofhook.jpg" target="_blank">
+	                        <img src="images/roofhook.jpg" alt="24' Ladder" class="table_img"></a></th>
+                        <td>8' Roof Hook </td>
+                        <td><div class="noScreen"><input type="checkbox"></div></td>
+                    </tr>           		</tbody>
             </table>
+        </section>
+        
+        <!-- Image Section -->
+        <div class="noPrint">
+            <section class="image_container">
+                <img src="images/rearladder.jpg" alt="Driver Compartment 3 Image" class="compimage">
+            </section>
         </div>
     </div>
-
-    <hr>
 </body>
+		<footer>
+			<div class="noScreen">
+			<hr>
+			<p id="demo"></p>
+			</div>
+		<script>
+		const d = new Date();
+		document.getElementById("demo").innerHTML = d.toDateString();
+		</script>
+		</footer>
 </html>
