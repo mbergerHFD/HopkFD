@@ -3,44 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engine 1 - D1</title>
+    <title>Top</title>
     <link rel="stylesheet" href="compartment_style.css">
 </head>
-<body>  
+<body>
     <!-- Header Section -->
-    <div class="noScreen" style="text-align: center">
-        <h1>Hopkinton Fire Department</h1><hr>
-    </div>
-
     <div id="header_container" class="header_container">
-        <h2 class="h2-black">Driver Compartment 1</h2>
-        <img src="images/specsheetdriverd2.jpg" class="header_image" alt="Driver Compartment Image">
+        <img src="images/specsheettop.jpg" class="header_image" alt="Compartment Image">
+		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
+		<h2>Top</h2>
     </div>
 
+    <!-- Button Section -->
+	<div class="button-container">
+	<button onclick="window.print()" class="noPrint">Print</button>
+		<button onclick="history.back()" class="noPrint">Back</button>
+    </div>
     <hr>
-
     <!-- Main Content Section -->
     <div class="container">
-        <!-- Image Section -->
-        <div class="image_container">
-            <img src="images/d2.jpg" alt="Driver Compartment Image" class="compimage">
-        </div>
-
         <!-- Table Section -->
         <div class="table_container">
             <table id="compartmentTable" class="compartment-table">
                 <tbody>
-                    <tr>
-                        <th><a href="images/4-5-Storz.jpg" target="_blank">
-                            <img src="images/4-5-Storz.jpg" alt="4” Storz - 5” Storz" class="table_img"></a></th>
-                        <td>4” Storz - 5” Storz</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-                </tbody>
+						<tr>
+							<th><a href="images/WHITEBUCKET.jpg" target="_blank">
+									<img src="images/WHITEBUCKET.jpg" alt="image" class="table_img"></th>
+							<td>5 Gallon Bucket Speedy Dry (2)</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/yellowbucket.jpg" target="_blank">
+									<img src="images/yellowbucket.jpg" alt="image" class="table_img"></th>
+							<td>Decon Bucket</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/trafficcone.jpg" target="_blank">
+									<img src="images/trafficcone.jpg" alt="image" class="table_img"></th>
+							<td>Orange Traffic Cones (5)</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/aframeladder.jpg" target="_blank">
+									<img src="images/aframeladder.jpg" alt="image" class="table_img"></th>
+							<td>4' A-Frame Ladder</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/floatingstrainer.jpg" target="_blank">
+									<img src="images/floatingstrainer.jpg" alt="image" class="table_img"></th>
+							<td>Self Leveling Floating Strainer</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/barrelstrainer.jpg" target="_blank">
+									<img src="images/barrelstrainer.jpg" alt="image" class="table_img"></th>
+							<td>Barrel Strainer</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/pumphose.jpg" target="_blank">
+									<img src="images/pumphose.jpg" alt="image" class="table_img"></th>
+							<td>50' Pump Hose (2)</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/gardenhose.jpg" target="_blank">
+									<img src="images/gardenhose.jpg" alt="image" class="table_img"></th>
+							<td>Garden Hose</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/firerake.jpg" target="_blank">
+									<img src="images/firerake.jpg" alt="image" class="table_img"></th>
+							<td>5' Fire Rake</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/forestryhose.jpg" target="_blank">
+									<img src="images/forestryhose.jpg" alt="image" class="table_img"></th>
+							<td>1" Forestry Hose (4)</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+				</tbody>
             </table>
         </div>
-    </div>
+        
+        <!-- Image Section -->
+		<div class="noPrint">
 
-    <hr>
+			<div class="image_container">
+				<img src="images/top.jpg" alt="Driver Compartment Image" class="compimage">
+			</div>
+		</div>
+    </div>
 </body>
+		<footer>
+			<div class="noScreen">
+			<p id="demo"></p>
+			</div>
+		</footer>
+
+		<script>
+			const d = new Date();
+			document.getElementById("demo").innerHTML = d.toDateString();
+		</script>
 </html>

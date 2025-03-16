@@ -13,7 +13,7 @@ body {
 }
 
 .header_image {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -67,6 +67,7 @@ body {
     height: auto;
     border: 5px solid #34495e;
     border-radius: 8px;
+
 }
 
 /* Layout Containers */
@@ -267,4 +268,10 @@ footer {
     #header_container h2 {
         font-size: 1.5rem;
     }
+    
+    .header_image {
+    width: 100%;
+    height: auto;
+	}
+
 }
