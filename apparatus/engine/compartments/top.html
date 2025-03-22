@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top</title>
+    <title>Top Compartment</title>
     <link rel="stylesheet" href="compartment_style.css">
 </head>
 <body>
     <!-- Header Section -->
     <div id="header_container" class="header_container">
-        <img src="images/specsheettop.jpg" class="header_image" alt="Compartment Image">
+        <img src="images/specsheetdriverd1.jpg" class="header_image" alt="Driver Compartment Image">
 		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
-		<h2>Top</h2>
+		<h2>Top Compartment</h2>
+		<h2 class="hide noScreen">Engine</h2>
     </div>
-
     <!-- Button Section -->
 	<div class="button-container">
 	<button onclick="window.print()" class="noPrint">Print</button>
@@ -110,12 +110,12 @@
 </body>
 		<footer>
 			<div class="noScreen">
+			<hr>
 			<p id="demo"></p>
 			</div>
-		</footer>
-
 		<script>
-			const d = new Date();
-			document.getElementById("demo").innerHTML = d.toDateString();
+		const d = new Date();
+		document.getElementById("demo").innerHTML = d.toDateString();
 		</script>
+		</footer>
 </html>

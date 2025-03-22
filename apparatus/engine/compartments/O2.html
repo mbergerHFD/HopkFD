@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Officer Compartment 2</title>
+    <title>Officer Compartment - O2</title>
     <link rel="stylesheet" href="compartment_style.css">
 </head>
 <body>    
     <!-- Header Section -->
     <div id="header_container" class="header_container">
-        <img src="images/specsheetofficerO2.jpg" class="header_image" alt="Officer Compartment 2">
-        <h2 class="h2-black">Officer Compartment 2</h2>
+        <img src="images/specsheetdriverd1.jpg" class="header_image" alt="Driver Compartment Image">
+		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
+		<h2>Officer Compartment 2</h2>
+		<h2 class="hide noScreen">Engine</h2>
     </div>
-    <hr>
-    
     <!-- Button Section -->
-    <div class="button-container">
-	    <button onclick="window.print()" class="noPrint">Print</button>
-        <button onclick="history.back()" class="noPrint">Back</button>
+	<div class="button-container">
+	<button onclick="window.print()" class="noPrint">Print</button>
+		<button onclick="history.back()" class="noPrint">Back</button>
     </div>
     <hr>
-    
     <!-- Main Content Section -->
     <div class="container">
         <!-- Table Section -->
@@ -102,4 +101,14 @@
         </div>
     </div>
 </body>
+		<footer>
+			<div class="noScreen">
+			<hr>
+			<p id="demo"></p>
+			</div>
+		<script>
+		const d = new Date();
+		document.getElementById("demo").innerHTML = d.toDateString();
+		</script>
+		</footer>
 </html>
