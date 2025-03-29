@@ -172,6 +172,10 @@ footer {
         width: 100%;
     }
 
+	#header_container {
+		width: 100%;
+	}
+
     #header_container h2 {
         font-size: 6vw;
     }
@@ -189,10 +193,7 @@ footer {
         padding: 10px;
         margin-bottom: 10px;      /* Space between stacked buttons */
     }
-    
-    .header_image {
-	    width: 50%;
-	}
+
 }
 
 /* Desktop Adjustments */
