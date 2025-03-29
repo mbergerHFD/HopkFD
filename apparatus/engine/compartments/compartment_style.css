@@ -172,8 +172,8 @@ footer {
         width: 100%;
     }
 
-	#header_container {
-		width: 100px;
+	.header_image {
+		width: 50%;
 	}
 
     #header_container h2 {
