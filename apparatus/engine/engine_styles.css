@@ -82,6 +82,6 @@ body {
 
     .image-item img {
         width: 100%; /* Ensure full width on small screens */
-        height: 100px; /* Fixed height for all images */
+        height: 200px; /* Fixed height for all images */
     }
 }
