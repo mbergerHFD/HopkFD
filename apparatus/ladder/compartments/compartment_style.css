@@ -30,7 +30,6 @@ body {
 
 /* Table Styling */
 .compartment-table {
-    width: 100%;
     border-collapse: collapse;
     text-align: left;
 }
@@ -42,7 +41,11 @@ body {
 }
 
 .compartment-table td {
-	width: 43%;
+    width: 85%;
+}
+
+.compartment-table th {
+    width: 15%;
 }
 
 .compartment-table tr {
@@ -51,6 +54,14 @@ body {
 
 .compartment-table tr:nth-child(odd) {
     background-color: #f5f5f5;
+}
+
+.table_container {
+	margin-right: 20px;
+}
+
+.image_container {
+	margin-right: 20px;
 }
 
 /* Scrollable Table on Mobile */
@@ -64,7 +75,7 @@ body {
     height: auto;
     width: 100%;
     max-width: 50px;
-    max-height:50px;
+    max-height: 50px;
 }
 
 .compimage {
@@ -72,7 +83,6 @@ body {
     height: auto;
     border: 5px solid #34495e;
     border-radius: 8px;
-
 }
 
 /* Layout Containers */
