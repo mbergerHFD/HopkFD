@@ -11,7 +11,7 @@ body {
     width: 100%;
     text-align: center;
 }
-
+	
 .header_image {
     width: auto;
     height: auto;
@@ -38,6 +38,11 @@ body {
 .compartment-table th, 
 .compartment-table td {
     padding: 12px;
+    text-align: left;
+}
+
+.compartment-table td {
+	width: 43%;
 }
 
 .compartment-table tr {
