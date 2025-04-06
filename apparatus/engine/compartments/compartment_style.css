@@ -208,6 +208,8 @@ footer {
         padding: 10px;
         margin-bottom: 10px;      /* Space between stacked buttons */
     }
+    #printbutton {
+	    display:hidden
 
 }
 
