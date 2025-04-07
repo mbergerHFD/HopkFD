@@ -1,58 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Officer Compartment 1 - O1</title>
-    <link rel="stylesheet" href="compartment_style.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <div id="header_container" class="header_container">
-        <img src="images/specsheetofficerO1.jpg" class="header_image" alt="Driver Compartment Image">
-		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
-		<h2>Officer Compartment 1</h2>
-		<h2 class="hide noScreen">Ladder</h2>
-    </div>
-    <!-- Button Section -->
-	<div class="button-container">
-	<button onclick="window.print()" class="noPrint">Print</button>
-		<button onclick="history.back()" class="noPrint">Back</button>
-    </div>
-    <hr>
-    <!-- Main Content Section -->
-    <div class="container">
-        <!-- Table Section -->
-        <div class="table_container">
-            <table id="compartmentTable" class="compartment-table">
-                <tbody>
-						<tr>
-							<th><a href="images/noimage.jpg" target="_blank">
-								<img src="images/noimage.jpg" alt="image" class="table_img"></th>
-							<td>None</td></a>
-							<td><div class="noScreen"><input type="checkbox"></div></td>
-						</tr>
-				</tbody>
-            </table>
-        </div>
-        
-        <!-- Image Section -->
-		<div class="noPrint">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Officer Compartment 1 - O1 </title>
+		<link rel="stylesheet" href="compartment_style.css" type="text/css">
+	</head>
+	<body>
+		<!-- Header Section -->
+		<div id="header_container" class="header_container">
+			<img src="images/specsheetdriverd2.jpg" class="header_image" alt="Driver Compartment Image">
+			<h2 class="hide noScreen">&amp; Hopkinton Fire Department </h2> <!-- Only visible during print -->
+			<h2>Officer Compartment 1 </h2>
+			<h2 class="hide noScreen">Ladder 1 </h2> <!-- Only visible during print -->
+		</div>
+		<!-- Button Section -->
+		<div class="button-container">
+			<button id="printbutton" onclick="window.print()" class="noPrint">Print</button> <!-- Print button hides on mobile devices --> <!-- Not visible during print -->
+			<button onclick="history.back()" class="noPrint">Back</button> <!-- Not visible during print -->
 
-			<div class="image_container">
-				<img src="images/O1.jpg" alt="Compartment Image" class="compimage">
+</div>
+		<hr> <!-- Horizontal line seperating tables from body header section -->
+		
+		<!-- Content Section -->
+		
+		<div class="container"> <!-- Contains table_container and image_container into one container -->
+			
+			<!-- Table Section -->
+			
+			<div class="table_container"> <!-- Contains all tables into one container -->
+				
+				<table id="compartmentTable" class="compartment-table"> <!-- 1st table grouped for proper layout -->
+					<tbody>
+						
+					<!-- Each table row has one picture in a <th> followed by a text description in a <td>, 
+							the second <td> is used to create a check box that is only visible during print -->
+						
+						<tr>
+							<th>
+								<a href="images/noimage.jpg" target="_blank">
+									<img src="images/noimage.jpg" alt="Description " class="table_img">
+								</a>
+							</th>
+							<td>Item Description </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+				<p style="break-before: column"></p> <!-- Formats table so that all rows are on one line during print -->
+			</div>
+			
+			<!-- Compartment Image Section -->
+			
+			<div class="noPrint"> <!-- Image is hidden during print -->
+				<div class="image_container">
+				<img src="images/d6.jpg" alt="Compartment Image" class="compimage">
+				</div>
 			</div>
 		</div>
-    </div>
-</body>
-		<footer>
-			<div class="noScreen">
-			<hr>
-			<p id="demo"></p>
-			</div>
-		<script>
-		const d = new Date();
-		document.getElementById("demo").innerHTML = d.toDateString();
-		</script>
-		</footer>
+	</body>
 </html>

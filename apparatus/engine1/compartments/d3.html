@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Driver Compartment 3 - D3 </title>
+		<link rel="stylesheet" href="compartment_style.css" type="text/css">
+	</head>
+	<body>
+		
+		<!-- Header Section -->
+		
+		<div id="header_container" class="header_container">
+			<img src="images/specsheetdriverd3.jpg" class="header_image" alt="Driver Compartment Image">
+			<h2 class="hide noScreen">Hopkinton Fire Department </h2> <!-- Only visible during print -->
+			<h2>Driver Compartment 3 </h2>
+			<h2 class="hide noScreen">Engine 1 </h2> <!-- Only visible during print -->
+		</div>
+		
+		<!-- Button Section -->
+		
+		<div class="button-container">
+			<button id="printbutton" onclick="window.print()" class="noPrint">Print</button> <!-- Print button hides on mobile devices --> <!-- Not visible during print -->
+			<button onclick="history.back()" class="noPrint">Back</button> <!-- Not visible during print -->
+
+</div>
+		<hr> <!-- Horizontal line seperating tables from body header section -->
+		
+		<!-- Content Section -->
+		
+		<div class="container"> <!-- Contains table_container and image_container into one container -->
+			
+			<!-- Table Section -->
+			
+			<div class="table_container"> <!-- Contains all tables into one container -->
+				<h3><u>Shelf 1 </u></h3> <!-- First Shelf Heading Section -->
+				<table class="compartment-table"> <!-- 1st table grouped for proper layout -->
+					<tbody>
+						
+					<!-- Each table row has one picture in a <th> followed by a text description in a <td>, 
+							the second <td> is used to create a check box that is only visible during print -->
+						
+						<tr>
+							<th>
+								<a href="images/msa45.jpg" target="_blank">
+									<img src="images/msa45.jpg" alt="4500 PSI 30 MIN MSA G1 Cylinder" class="table_img">							
+							</th>
+							<td>4500 PSI 30 MIN MSA G1 Cylinder </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox" aria-label="Check 4500 PSI 30 MIN MSA G1 Cylinder">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/msa45.jpg" target="_blank">
+									<img src="images/msa45.jpg" alt="4500 PSI 30 MIN MSA G1 Cylinder" class="table_img">							
+							</th>
+							<td>4500 PSI 30 MIN MSA G1 Cylinder </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox" aria-label="Check 4500 PSI 30 MIN MSA G1 Cylinder">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/msa45.jpg" target="_blank">
+									<img src="images/msa45.jpg" alt="4500 PSI 30 MIN MSA G1 Cylinder" class="table_img">							
+							</th>
+							<td>4500 PSI 30 MIN MSA G1 Cylinder </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox" aria-label="Check 4500 PSI 30 MIN MSA G1 Cylinder">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p style="break-before: column"></p> <!-- Formats table so that all rows are on one line during print -->
+			</div>
+			
+			<!-- Compartment Image Section -->
+			
+			<div class="noPrint"> <!-- Image is hidden during print -->
+				<div class="image_container">
+					<img src="images/d3.jpg" alt="Compartment Image" class="compimage">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

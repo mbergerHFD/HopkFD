@@ -1,124 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driver Compartment 3 - D3</title>
-    <link rel="stylesheet" href="compartment_style.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <div id="header_container" class="header_container">
-        <img src="images/specsheetdriverd3.jpg" class="header_image" alt="Driver Compartment Image">
-		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
-		<h2>Driver Compartment 3</h2>
-		<h2 class="hide noScreen">Ladder</h2>
-    </div>
-    <!-- Button Section -->
-	<div class="button-container">
-	<button onclick="window.print()" class="noPrint">Print</button>
-		<button onclick="history.back()" class="noPrint">Back</button>
-    </div>
-    <hr>
-    <!-- Main Content Section -->
-    <div class="container">
-        <!-- Table Section -->
-        <div class="table_container">
-			<h3>Front</h3>
-            <table id="compartmentTable" class="compartment-table">
-                <tbody>
-                    <tr>
-                        <th><a href="images/boltcutters.jpg" target="_blank">
-                            <img src="images/boltcutters.jpg" alt="24 inch bolt cutters" class="table_img"></a></th>
-                        <td>24" Bolt Cutters</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-                    <tr>
-                        <th><a href="images/boltcutters.jpg" target="_blank">
-                            <img src="images/boltcutters.jpg" alt="18 inch bolt cutters" class="table_img"></a></th>
-                        <td>18" Bolt Cutters</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-                    <tr>
-                        <th><a href="images/4ft_d_hook.jpg" target="_blank">
-                            <img src="images/4ft_d_hook.jpg" alt="4 feet D-Handle hook" class="table_img"></a></th>
-                        <td>4' All Purpose D-Handle Hook (2)</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-				</tbody>
-			</table>
-			<h3>Rear</h3>
-            <table id="compartmentTable" class="compartment-table">
-                <tbody>
-                    <tr>
-                        <th><a href="images/boltcutters.jpg" target="_blank">
-                            <img src="images/boltcutters.jpg" alt="24 inch bolt cutters" class="table_img"></a></th>
-                        <td>36" Bolt Cutters</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-                    <tr>
-                        <th><a href="images/pickheadaxe.jpg" target="_blank">
-                            <img src="images/pickheadaxe.jpg" alt="4 feet D-Handle hook" class="table_img"></a></th>
-                        <td>6 lb Pick Head Axe</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-				</tbody>
-			</table>
-			<h3>Back Wall</h3>
-            <table id="compartmentTable" class="compartment-table">
-                <tbody>
-                    <tr>
-                        <th><a href="images/drywallhook.jpg" target="_blank">
-                            <img src="images/drywallhook.jpg" alt="Drywall Hook" class="table_img"></a></th>
-                        <td>4' D-Handle Drywall Hook</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>                    
-                    <tr>
-                        <th><a href="images/dhandlepikepole.jpg" target="_blank">
-                            <img src="images/dhandlepikepole.jpg" alt="D-Handle Pike Pole" class="table_img"></a></th>
-                        <td>4' D-Handle Pike Pole</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-                    <tr>
-                        <th><a href="images/10lb_sledge.jpg" target="_blank">
-                            <img src="images/10lb_sledge.jpg" alt="10 lb sledge hammer" class="table_img"></a></th>
-                        <td>10 lb Sledge Hammer (2)</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-                    <tr>
-                        <th><a href="images/piercingnozzle.jpg" target="_blank">
-                            <img src="images/piercingnozzle.jpg" alt="Piercing Nozzle" class="table_img"></a></th>
-                        <td>3' Akron Piercing Nozzle</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>
-                    <tr>
-                        <th><a href="images/noimage.jpg" target="_blank">
-                            <img src="images/noimage.jpg" alt="none" class="table_img"></a></th>
-                        <td>Ladder Tip Lifting Eye Rescue Attachment</td>
-                        <td><div class="noScreen"><input type="checkbox"></div></td>
-                    </tr>                
-            	</tbody>
-			</table>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Driver Compartment 3 - D3 </title>
+		<link rel="stylesheet" href="compartment_style.css" type="text/css">
+	</head>
+	<body>
+		<!-- Header Section -->
+		<div id="header_container" class="header_container">
+			<img src="images/specsheetdriverd2.jpg" class="header_image" alt="Driver Compartment Image">
+			<h2 class="hide noScreen">Hopkinton Fire Department </h2> <!-- Only visible during print -->
+			<h2>Driver Compartment 3 </h2>
+			<h2 class="hide noScreen">Ladder 1 </h2> <!-- Only visible during print -->
 		</div>
-		<!-- Image Section -->
-		<div class="noPrint">
+		<!-- Button Section -->
+		<div class="button-container">
+			<button id="printbutton" onclick="window.print()" class="noPrint">Print</button> <!-- Print button hides on mobile devices --> <!-- Not visible during print -->
+			<button onclick="history.back()" class="noPrint">Back</button> <!-- Not visible during print -->
 
-			<div class="image_container">
-				<img src="images/d3a.jpg" alt="Driver Compartment Image" class="compimage">
-				<img src="images/d3b.jpg" alt="Driver Compartment Image" class="compimage">
-				<img src="images/d3c.jpg" alt="Driver Compartment Image" class="compimage">
+</div>
+		<hr> <!-- Horizontal line seperating tables from body header section -->
+		
+		<!-- Content Section -->
+		
+		<div class="container"> <!-- Contains table_container and image_container into one container -->
+			
+			<!-- Table Section -->
+			
+			<div class="table_container"> <!-- Contains all tables into one container -->
+				<h3> <u>Front</u> </h3> <!-- First Shelf Heading Section -->
+				<table class="compartment-table"> <!-- 1st table grouped for proper layout -->
+					<tbody>
+						
+					<!-- Each table row has one picture in a <th> followed by a text description in a <td>, 
+							the second <td> is used to create a check box that is only visible during print -->
+						<tr>
+							<th>
+								<a href="images/boltcutters.jpg" target="_blank">
+								<img src="images/boltcutters.jpg" alt="24 inch bolt cutters" class="table_img">
+								</a>
+							</th>
+							<td>24" Bolt Cutters </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/boltcutters.jpg" target="_blank">
+									<img src="images/boltcutters.jpg" alt="18 inch bolt cutters" class="table_img">
+								</a>
+							</th>
+							<td>18" Bolt Cutters </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/4ft_d_hook.jpg" target="_blank">
+									<img src="images/4ft_d_hook.jpg" alt="4 feet D-Handle hook" class="table_img">
+								</a>
+							</th>
+							<td>4' All Purpose D-Handle Hook (2) </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3><u>Rear</u></h3>
+				<table class="compartment-table"> <!-- 2nd table grouped for proper layout -->
+					<tbody>
+						<tr>
+							<th>
+								<a href="images/boltcutters.jpg" target="_blank">
+									<img src="images/boltcutters.jpg" alt="24 inch bolt cutters" class="table_img">
+								</a>
+							</th>
+							<td>36" Bolt Cutters </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/pickheadaxe.jpg" target="_blank">
+									<img src="images/pickheadaxe.jpg" alt="4 feet D-Handle hook" class="table_img">
+								</a>
+							</th>
+							<td>6 lb Pick Head Axe </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 style="break-before: column"><u>Compartment Wall </u></h3> <!-- Spacing to allow table rows to align properly during print -->
+				<table class="compartment-table"> <!-- 3rd table grouped for proper layout -->
+					<tbody>
+						<tr>
+							<th>
+								<a href="images/drywallhook.jpg" target="_blank">
+									<img src="images/drywallhook.jpg" alt="Drywall Hook" class="table_img">
+								</a>
+							</th>
+							<td>4' D-Handle Drywall Hook </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>                    
+						<tr>
+							<th>
+								<a href="images/dhandlepikepole.jpg" target="_blank">
+									<img src="images/dhandlepikepole.jpg" alt="D-Handle Pike Pole" class="table_img">
+								</a>
+							</th>
+							<td>4' D-Handle Pike Pole </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/10lb_sledge.jpg" target="_blank">
+									<img src="images/10lb_sledge.jpg" alt="10 lb sledge hammer" class="table_img">
+								</a>
+							</th>
+							<td>10 lb Sledge Hammer (2) </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/piercingnozzle.jpg" target="_blank">
+									<img src="images/piercingnozzle.jpg" alt="Piercing Nozzle" class="table_img">
+								</a>
+							</th>
+							<td>3' Akron Piercing Nozzle </td>
+							<td>	
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/noimage.jpg" target="_blank">
+									<img src="images/noimage.jpg" alt="none" class="table_img">
+								</a>
+							</th>
+							<td>Ladder Tip Lifting Eye Rescue Attachment </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr> 
+					</tbody>
+				</table>
+				<p style="break-before: column"></p> <!-- Formats table so that all rows are on one line during print -->
+			</div>
+			
+			<!-- Compartment Image Section -->
+			
+			<div class="noPrint"> <!-- Image is hidden during print -->
+				<div class="image_container">
+				<img src="images/d3a.jpg" alt="Compartment Image" class="compimage">
+				<img src="images/d3b.jpg" alt="Compartment Image" class="compimage">
+				<img src="images/d3c.jpg" alt="Compartment Image" class="compimage">
+				</div>
 			</div>
 		</div>
-    </div>
-</body>
-		<footer>
-			<div class="noScreen">
-			<hr>
-			<p id="demo"></p>
-			</div>
-		<script>
-		const d = new Date();
-		document.getElementById("demo").innerHTML = d.toDateString();
-		</script>
-		</footer>
+	</body>
 </html>

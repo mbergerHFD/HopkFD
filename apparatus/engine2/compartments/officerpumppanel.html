@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Pump Panel</title>
+    <link rel="stylesheet" href="compartment_style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header_container" class="header_container">
+        <img src="images/specsheetofficerpumppanel.jpg" class="header_image" alt="Driver Compartment Image">
+		<h2 class="hide noScreen">Hopkinton Fire Department</h2>
+		<h2>Officer Side Pump Panel</h2>
+		<h2 class="hide noScreen">Engine</h2>
+    </div>
+    <!-- Button Section -->
+	<div class="button-container">
+	<button id="printbutton" onclick="window.print()" class="noPrint">Print</button>
+		<button onclick="history.back()" class="noPrint">Back</button>
+    </div>
+    <hr>
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Table Section -->
+        <div class="table_container">
+            <table id="compartmentTable" class="compartment-table">
+                <tbody>
+						<tr>
+							<th><a href="images/newyorkhook.jpg" target="_blank">
+								<img src="images/newyorkhook.jpg" alt="image" class="table_img"></th>
+							<td>5' New York Hook</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/4hoseroll.jpg" target="_blank">
+								<img src="images/4hoseroll.jpg" alt="image" class="table_img"></th>
+							<td>35' 4" Hose Roll</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/4hoseroll.jpg" target="_blank">
+								<img src="images/4hoseroll.jpg" alt="image" class="table_img"></th>
+							<td>35' 4" Hose Roll</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/storz4.5jpg" target="_blank">
+								<img src="images/storz4.5.jpg" alt="image" class="table_img"></th>
+							<td>Stortz to 4 ½” NH Female Coupling (2)</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+						<tr>
+							<th><a href="images/boosterreel.jpg" target="_blank">
+								<img src="images/boosterreel.jpg" alt="image" class="table_img"></th>
+							<td>100' 1" Booster Hose Reel with 23 GPM Fog Nozzle</td></a>
+							<td><div class="noScreen"><input type="checkbox"></div></td>
+						</tr>
+				</tbody>
+            </table>
+				<h3 style="break-before: column"></h3> <!-- Sets column layout during print -->
+        </div>
+        
+        <!-- Image Section -->
+		<div class="noPrint">
+
+			<div class="image_container">
+				<img src="images/officerpumppanel.jpg" alt="Driver Compartment Image" class="compimage">
+			</div>
+		</div>
+    </div>
+</body>
+<!--
+		<footer>
+			<div class="noScreen">
+			<hr>
+			<p id="demo"></p>
+			</div>
+		<script>
+		const d = new Date();
+		document.getElementById("demo").innerHTML = d.toDateString();
+		</script>
+		</footer>
+-->
+</html>
