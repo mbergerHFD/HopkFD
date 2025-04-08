@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Officer Compartment 1 - O1 </title>
+		<link rel="stylesheet" href="compartment_style.css" type="text/css">
+	</head>
+	<body>
+		<!-- Header Section -->
+		<div id="header_container" class="header_container">
+			<img src="images/specsheetofficerO1.jpg" class="header_image" alt="Driver Compartment Image">
+			<h2 class="hide noScreen">Hopkinton Fire Department </h2> <!-- Only visible during print -->
+			<h2>Officer Compartment 1 </h2>
+			<h2 class="hide noScreen">Ladder 1 </h2> <!-- Only visible during print -->
+		</div>
+		<!-- Button Section -->
+		<div class="button-container">
+			<button id="printbutton" onclick="window.print()" class="noPrint">Print</button> <!-- Print button hides on mobile devices --> <!-- Not visible during print -->
+			<button onclick="history.back()" class="noPrint">Back</button> <!-- Not visible during print -->
+
+</div>
+		<hr> <!-- Horizontal line seperating tables from body header section -->
+		
+		<!-- Content Section -->
+		
+		<div class="container"> <!-- Contains table_container and image_container into one container -->
+			
+			<!-- Table Section -->
+			
+			<div class="table_container"> <!-- Contains all tables into one container -->
+				
+				<table id="compartmentTable" class="compartment-table"> <!-- 1st table grouped for proper layout -->
+					<tbody>
+						
+					<!-- Each table row has one picture in a <th> followed by a text description in a <td>, 
+							the second <td> is used to create a check box that is only visible during print -->
+						
+						<tr>
+							<th>
+								<a href="images/chimneybucket.jpg" target="_blank">
+									<img src="images/chimneybucket.jpg" alt="Chimney Bucket" class="table_img">
+								</a>
+							</th>
+							<td>Chimney Bucket </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/chimneyshovel.jpg" target="_blank">
+									<img src="images/chimneyshovel.jpg" alt="Chimney Bucket Shovel" class="table_img">
+								</a>
+							</th>
+							<td>Chimney Bucket Shovel </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/handbrush.jpg" target="_blank">
+									<img src="images/handbrush.jpg" alt="Hand Brush" class="table_img">
+								</a>
+							</th>
+							<td>Hand Brush </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/inspectionmirror.jpg" target="_blank">
+									<img src="images/inspectionmirror.jpg" alt="Inspection Mirror" class="table_img">
+								</a>
+							</th>
+							<td>Inspection Mirror </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/chimneygloves.jpg" target="_blank">
+									<img src="images/chimneygloves.jpg" alt="Chimney Gloves" class="table_img">
+								</a>
+							</th>
+							<td>Chimney Gloves </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<a href="images/chimneybomb.jpg" target="_blank">
+									<img src="images/chimneybomb.jpg" alt="Chimney Bomb" class="table_img">
+								</a>
+							</th>
+							<td>Chimney Bomb </td>
+							<td>
+								<div class="noScreen">
+									<input type="checkbox">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p style="break-before: column"></p> <!-- Formats table so that all rows are on one line during print -->
+			</div>
+			
+			<!-- Compartment Image Section -->
+			
+			<div class="noPrint"> <!-- Image is hidden during print -->
+				<div class="image_container">
+				<img src="images/O1.jpg" alt="Compartment Image" class="compimage">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
