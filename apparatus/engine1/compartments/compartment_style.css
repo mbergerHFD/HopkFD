@@ -272,7 +272,7 @@ footer {
         margin: 0;
         padding: 0;
     }
-
+	
     .table_container, .header_container {
         width: 100%;
         column-count: 2;
@@ -298,5 +298,9 @@ footer {
     height: auto;
 	}
 
+	a {
+	  color: black;
+	  text-decoration: none; /* no underline */
+	}
 
 }
